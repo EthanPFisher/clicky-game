@@ -13,7 +13,14 @@ class App extends Component {
     return (
       <div className="App">
         <Nav></Nav>
-        
+        {this.state.pictures.map(picture => (
+          <Card
+            id={picture.id}
+            key={picture.id}
+            name={picture.name}
+            image={picture.image}
+          />
+        ))}
       </div>
     );
   }
