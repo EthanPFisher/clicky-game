@@ -21,7 +21,6 @@ class App extends Component {
             image={picture.image}
           />
         ))}
-        <text>TESTESTESTESTEST</text>
       </div>
     );
   }
